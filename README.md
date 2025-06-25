@@ -33,3 +33,5 @@ Terakhir, setiap ingin melihat preview atau melanjutkan projek. Salin atau ketik
 ```bash
   npm run dev
 ```
+## Figma
+Berikut adalah link figma yang berisi wireframe baik low fidelity maupun high fidelity: https://www.figma.com/design/rA1BCsK7MZnNuciYBXzEGm/DAMP-Project?node-id=210-3032&p=f&t=eWeEhmbv8RfTcp1s-0
