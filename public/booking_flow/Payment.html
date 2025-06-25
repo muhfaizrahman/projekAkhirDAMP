@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link href="../css/style.css" rel="stylesheet">
+
+</head>
+<body class="bg-[#FAFAFA] font-poppins container-hp">
+
+    <!-- Heading -->
+    <header class="mb-6 mt-6 flex items-center">
+        <div class="size-10 bg-secondary rounded-full mr-5 flex justify-center items-center">
+            <a href="ReviewBooking.html">
+                <img src="../img/BackButton.png" alt="">
+            </a>
+        </div>
+        <h1 class="text-2xl font-semibold text-black">Payment</h1>
+    </header>
+
+     <!-- Main Content -->
+    <main class="pb-16 space-y-6">
+
+        <!-- Payment Deadline -->
+        <div class="text-right text-black text-xs">
+            Complete payment before: <strong>23:55:10</strong>
+        </div>
+
+        <!-- Virtual Account -->
+        <section class="bg-primary text-white p-4 rounded-lg space-y-4">
+            <div class="space-y-1">
+                <h2 class="text-sm font-semibold">Mandiri Virtual Account</h2>
+                <p class="text-xs">Copy the code below and pay before the time expires.</p>
+            </div>
+            <div class="flex items-center justify-between w-full bg-transparent text-base border border-white px-4 py-3 rounded-lg">
+                <p class="">123 0812 3456 7890</p>
+                <button class="p-1 rounded-lg hover:bg-active transition-colors flex justify-center items-center">
+                    <img src="../img/CopyIcon.png" alt="Copy Icon" class="size-5">
+                </button>
+            </div>
+        </section>
+
+        <!-- Payment Instruction -->
+        <section class="space-y-4 text-black">
+            <h2 class="text-lg font-semibold">Payment Instruction via Livin' by Mandiri (Virtual Account)</h2>
+            <ol class="list-decimal list-inside space-y-2 text-sm">
+                <li>Open the <strong>Livin'</strong> by Mandiri app on your smartphone.</li>
+                <li>Login with your Mandiri account.</li>
+                <li>Choose <strong>Pay</strong> menu on the main page.</li>
+                <li>Select the <strong>e-Commerce</strong> option.</li>
+                <li>In the service provider/merchant field, search and select <strong>Xendit</strong>.</li>
+                <li>Enter the Virtual Account Code: <strong>123 0812 3456 7890</strong>.</li>
+                <li>Double check the payment details (vendor name, amount, etc).</li>
+                <li>Click <strong>Continue</strong> then <strong>Pay</strong>.</li>
+                <li>Enter your <strong>Livin' PIN</strong> to complete the transaction.</li>
+            </ol>
+        </section>
+
+        <!-- Notes -->
+        <section class="space-y-4 text-black">
+            <h2 class="text-lg font-semibold">Notes</h2>
+            <ol class="list-decimal list-inside space-y-2 text-sm">
+                <li>Make sure the <strong>amount</strong> and <strong>recipient's name</strong> are <strong>correct</strong> before paying.</li>
+                <li>After successful payment, system will automatically verify within a few minutes.</li>
+                <li>If within 15 minutes the status has not changed, please contact the admin via the Chat feature.</li>
+            </ol>
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Booking</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link href="../css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-[#FAFAFA] font-poppins container-hp">
+
+    <!-- Heading -->
+    <header class="mb-6 mt-6 flex items-center">
+        <div class="size-10 bg-secondary rounded-full mr-5 flex justify-center items-center">
+            <a href="FillDetail.html">
+                <img src="../img/BackButton.png" alt="">
+            </a>
+        </div>
+        <h1 class="text-2xl font-semibold text-black">Review Booking</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pb-24 space-y-6">
+
+        <!-- Payment Info -->
+        <section class="flex justify-between items-center text-black">
+            <div class="flex items-center space-x-2">
+                <span class="bg-[#BC1600] text-white p-3 rounded-full shadow-sm text-xs font-medium">Down Payment</span>
+            </div>
+            <div class="text-xs flex flex-col items-end">
+                <span>Next payment</span>
+                <span>26 June 2025</p>
+            </div>
+        </section>
+
+        <!-- Event Summary -->
+        <section class="bg-primary rounded-lg p-4 text-white">
+            <h2 class="text-sm font-semibold mb-2 border-b border-white pb-2">Raden MUA and Professional Attire</h2>
+            <div class="flex flex-col space-y-1 text-xs">
+
+                <!-- Details -->
+                <div class="flex items-center text-sm">
+                    <svg class="size-4 mr-2 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" ></svg>
+                    <span>Malang</span>
+                </div>
+
+                <div class="flex items-center text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-4 mr-2 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                    <span>Booking Date: 28 June 2025</span>
+                </div>
+
+                <div class="flex items-center text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-4 mr-2 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    <span>Time: 10:00 WIB - 16:00 WIB</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Package Summary -->
+        <section class="bg-active rounded-lg p-4 text-black">
+            <h2 class="text-sm font-semibold mb-2 border-b border-subtleDark pb-2">Package Summary</h2>
+            <!-- Package Details -->
+            <div class="flex flex-col space-y-2 text-xs">
+
+                <div class="flex flex-col">
+                    <span class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 mr-2 stroke-black" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.769.743 1.769H17m0 0A2 2 0 1020 17 2 2 0 0017 17zm-10 0a2 2 0 100 4 2 2 0 000-4z" /></svg>
+                        <span>Package:</span>
+                    </span>
+                    <ul class="list-disc list-inside">
+                        <li>Main Package</li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col">
+                    <span class="flex items-center">
+                        <svg class="size-4 mr-2 text-black" viewBox="0 0 17 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.8125 12.1156C8.502 12.1156 8.25 11.8636 8.25 11.5531V6.05786C8.25 5.74736 8.502 5.49536 8.8125 5.49536C9.123 5.49536 9.375 5.74736 9.375 6.05786V11.5531C9.375 11.8636 9.123 12.1156 8.8125 12.1156"/><path fill-rule="evenodd" clip-rule="evenodd" d="M11.5625 9.36768H6.06274C5.75149 9.36768 5.50024 9.11568 5.50024 8.80518C5.50024 8.49468 5.75149 8.24268 6.06274 8.24268H11.5625C11.873 8.24268 12.125 8.49468 12.125 8.80518C12.125 9.11568 11.873 9.36768 11.5625 9.36768"/><path fill-rule="evenodd" clip-rule="evenodd" d="M5.298 1.875C3.219 1.875 1.875 3.29775 1.875 5.50125V12.1237C1.875 14.3272 3.219 15.75 5.298 15.75H12.327C14.4067 15.75 15.75 14.3272 15.75 12.1237V5.50125C15.75 3.29775 14.4067 1.875 12.327 1.875H5.298ZM12.327 16.875H5.298C2.57775 16.875 0.75 14.9655 0.75 12.1237V5.50125C0.75 2.6595 2.57775 0.75 5.298 0.75H12.327C15.0472 0.75 16.875 2.6595 16.875 5.50125V12.1237C16.875 14.9655 15.0472 16.875 12.327 16.875V16.875Z"/></svg>
+                        <span>Add-ons:</span>
+                    </span>
+                    <ul class="list-disc list-inside">
+                        <li>Drone Footage</li>
+                    </ul>
+                </div>
+                
+                <div class="flex flex-col">
+                    <span class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 mr-2 stroke-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                        </svg>
+                    <span>Notes (optional)</span>
+                    </span>
+                    <p class="text-xs">"Tolong datang 30 menit lebih awal"</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Payment Method -->
+        <section class="bg-white hover:bg-gray-100 p-4 rounded-lg border-2 border-subtleDark flex justify-between items-center text-black text-sm">
+            <span>Payment Method</span>
+            <div class="flex items-center space-x-2">
+                <span class="font-semibold">Bank Mandiri</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-5 black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </div>
+        </section>
+
+        <!-- Agreement -->
+        <section class="text-black">
+            <h2 class="text-lg font-semibold mb-4">Event Date</h2>
+            <div class="flex items-center space-x-3">
+                <input type="checkbox" id="agreement" class="size-5 rounded" checked>
+                <label for="agreement" class="text-sm font-worksans">I agree to vendor terms and refund policy</label>
+            </div>
+        </section>
+
+        <!-- Price Details -->
+        <section class="mb-6 text-black">
+            <h2 class="text-base font-semibold border-b border-subtleDark pb-2 mb-4">Price Details</h2>
+            <div class="space-y-2 mb-8 text-xs">
+                <div class="flex justify-between">
+                    <span>Main Package</span>
+                    <span>Rp 10.500.000</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Drone Footage</span>
+                    <span>Rp 2.800.000</span>
+                </div>
+                <div class="flex justify-between font-semibold">
+                    <span>Total payment</span>
+                    <span>Rp 13.300.000</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Down Payment (30%)</span>
+                    <span>Rp 4.000.000</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Remaining Balance</span>
+                    <span>Rp 9.300.000</span>
+                </div>
+                <div class="flex justify-between text-lg font-semibold pt-2 mt-2">
+                    <span>Total to pay now</span>
+                    <span>Rp 4.100.000</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pay Button -->
+    <footer class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg p-6 flex justify-center items-center z-20">
+        <a href="Payment.html" class="w-full bg-primary text-white p-3 rounded-full text-base font-medium text-center font-worksans">
+            Confirm and Pay - Rp 4.100.000
+        </a>
+    </footer>
+
+</body>
+</html>
