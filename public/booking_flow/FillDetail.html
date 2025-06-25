@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill In Details</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link href="../css/style.css" rel="stylesheet">
+
+    <style>
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            opacity: 0;
+            -webkit-appearance: none;
+        }
+
+        input[type="date"] {
+            position: relative;
+        }
+
+        input[type="date"]::after {
+            content: '▼';
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            color: #4a5568;  /* Warna dropdown */
+        }
+    </style>
+
+</head>
+<body class="bg-[#FAFAFA] font-poppins container-hp">
+
+    <!-- Heading -->
+    <header class="mb-6 mt-6 flex items-center">
+        <div class="size-10 bg-secondary rounded-full mr-5 flex justify-center items-center">
+            <a href="VendorDetail.html">
+                <img src="../img/BackButton.png" alt="">
+            </a>
+        </div>
+        <h1 class="text-2xl font-semibold text-black">Fill In Details</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pb-24">
+
+        <!-- Summary -->
+        <section class="bg-primary rounded-lg p-4 mb-6 text-white">
+            <h2 class="text-sm font-semibold mb-2 border-b border-white pb-2">Raden MUA and Professional Attire</h2>
+            <div class="flex items-center text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.769.743 1.769H17m0 0A2 2 0 1020 17 2 2 0 0017 17zm-10 0a2 2 0 100 4 2 2 0 000-4z" /></svg>
+                <p class="text-xs">Package:</p>
+            </div>
+            <ul class="list-disc pl-4">
+                <li class="text-xs">Main Package</li>
+            </ul>
+        </section>
+
+        <!-- Disclaimer -->
+        <section class="bg-active rounded-lg p-4 mb-6 text-black">
+            <h2 class="text-sm font-semibold mb-2 border-b border-black pb-2">Must-Read Before Book</h2>
+            <p class="text-xs">A 30% deposit is required upon booking to confirm your reservation. The remaining balance must be paid 3 days before the event date.</p>
+        </section>
+
+        <!-- Form Date-->
+        <section class="mb-6">
+            <h2 class="text-lg font-semibold text-black mb-4">Event Date</h2>
+            <input type="date" value="2025-06-28" class="w-full p-4 border border-subtleDark rounded-full text-sm text-subtleDark">
+        </section>
+        
+        <!-- Form Time -->
+        <section class="mb-6">
+            <h2 class="text-lg font-semibold text-black mb-4">Event Time</h2>
+            <input type="text" placeholder="10:00 - 16:00 WIB" class="w-full p-4 border border-subtleDark rounded-full text-sm text-subtleDark">
+        </section>
+
+        <!-- Event Location -->
+        <section class="mb-6">
+             <h2 class="text-lg font-semibold text-black mb-4">Event Location</h2>
+             <div class="space-y-4">
+                <input type="text" placeholder="Provinsi, Kota, Kecamatan, Kode Pos"
+                    class="w-full p-4 border border-subtleDark rounded-full text-sm text-subtleDark">
+                <input type="text" placeholder="Nama Jalan, Gedung, No. Rumah"
+                    class="w-full p-4 border border-subtleDark rounded-full text-sm text-subtleDark">
+                <input type="text" placeholder="Detail Lainnya (Cth: Blok / Unit No.)"
+                    class="w-full p-4 border border-subtleDark rounded-full text-sm text-subtleDark">
+                <div class="w-full h-40 rounded-lg flex items-center justify-center border border-subtleDark">
+                    <img src="../img/Map.png" alt="Map" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <button class="w-full bg-primary text-white py-3 rounded-full text-base font-mediumfont-worksans">
+                    Choose current location
+                </button>
+             </div>
+        </section>
+
+        <!-- Payment Option -->
+        <section class="mb-6">
+            <h2 class="text-lg font-semibold text-black mb-4">Payment Option</h2>
+            <div class="flex overflow-hidden font-worksans space-x-4">
+                <button class="rounded-full px-4 py-3 text-base font-medium text-white bg-primary">DP First</button>
+                <button class="rounded-full px-4 py-3 text-base font-medium border border-primary text-primary bg-white">Full Payment</button>
+            </div>
+        </section>
+
+        <!-- Add-Ons -->
+        <section class="mb-6">
+            <h2 class="text-lg font-semibold text-black mb-2 font-poppins">Add-Ons</h2>
+            <div class="space-y-2 mb-8 font-worksans">
+                <label class="flex items-center text-black text-base">
+                    <input type="checkbox" class="size-5 rounded mr-3">
+                    Drone Footage
+                </label>
+                <label class="flex items-center text-black text-base">
+                    <input type="checkbox" class="size-5 rounded mr-3">
+                    Extra Photographer
+                </label>
+            </div>
+        </section>
+
+        <!-- Notes -->
+        <section class="mb-6">
+            <h2 class="text-xl font-semibold text-black mb-4 font-poppins">Notes (optional)</h2>
+            <textarea placeholder="Additional notes for vendor" rows="5" class="w-full p-4 border border-subtleDark rounded-lg text-sm text-subtleDark"></textarea>
+        </section>
+
+        <!-- Price Details -->
+        <section class="mb-6 text-black">
+            <h2 class="text-base font-semibold border-b border-subtleDark pb-2 mb-4">Price Details</h2>
+            <div class="space-y-2 mb-8 text-xs">
+                <div class="flex justify-between">
+                    <span>Main Package</span>
+                    <span>Rp 10.500.000</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Drone Footage</span>
+                    <span>Rp 2.800.000</span>
+                </div>
+                <div class="flex justify-between font-semibold">
+                    <span>Total payment</span>
+                    <span>Rp 13.300.000</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Down Payment (30%)</span>
+                    <span>Rp 4.000.000</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Remaining Balance</span>
+                    <span>Rp 9.300.000</span>
+                </div>
+                <div class="flex justify-between text-lg font-semibold pt-2 mt-2">
+                    <span>Total to pay now</span>
+                    <span>Rp 4.100.000</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Continue Button -->
+    <footer class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg p-6 flex justify-center items-center z-20">
+        <a href="ReviewBooking.html" class="w-full bg-primary text-white p-3 rounded-full text-base font-medium text-center font-worksans">
+            Continue
+        </a>
+    </footer>
+
+</body>
+</html>
